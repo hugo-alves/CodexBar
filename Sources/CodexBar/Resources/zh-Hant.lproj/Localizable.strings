@@ -569,6 +569,13 @@
 "limit_reset_notification_title" = "%1$@ %2$@配額已重設";
 "limit_reset_notification_body" = "新配額已可用。";
 "limit_reset_notification_body_with_account" = "帳號 %@。新配額已可用。";
+"upcoming_reset_notifications_title" = "配額重設前提醒";
+"upcoming_reset_notifications_subtitle" = "在 Codex 每週配額重設前，若配額仍有剩餘則發出提醒。";
+"upcoming_reset_notification_title" = "%1$@ %2$@配額即將重設";
+"upcoming_reset_notification_body" = "還有 %1$@ 的配額未使用。配額將在 %2$@ 後重設，未使用的配額將失效。";
+"upcoming_reset_notification_body_with_account" = "帳號 %1$@。還有 %2$@ 的配額未使用。配額將在 %3$@ 後重設，未使用的配額將失效。";
+"upcoming_reset_notification_last_call_body" = "最後提醒：還有 %1$@ 的配額未使用。配額將在 %2$@ 後重設。";
+"upcoming_reset_notification_last_call_body_with_account" = "帳號 %1$@。最後提醒：還有 %2$@ 的配額未使用。配額將在 %3$@ 後重設。";
 "quota_warning_warn_at" = "提醒門檻";
 "quota_warning_global_threshold_subtitle" = "工作階段和每週時段的剩餘百分比，除非提供者另有設定。";
 "quota_warning_sound" = "播放通知音效";

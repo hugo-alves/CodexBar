@@ -227,7 +227,7 @@ show an incident indicator.
 - Bundled CLI (`codexbar`) for scripts and CI (including `codexbar cost --provider codex`, `claude`, or `both` for local cost usage); macOS and Linux CLI builds available.
 - WidgetKit widgets for supported providers.
 - Localized app and website with a shared 23-language catalog, automatic website detection, persistent pickers, and RTL support.
-- Optional session quota notifications and weekly-reset confetti.
+- Optional session quota notifications, upcoming-reset warnings for unused Codex quota, and weekly-reset confetti.
 - Privacy-first: on-device parsing by default; browser cookies are opt-in and reused (no passwords stored).
 
 ## Privacy note

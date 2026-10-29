@@ -560,6 +560,13 @@
 "limit_reset_notification_title" = "%1$@ %2$@ 한도 재설정됨";
 "limit_reset_notification_body" = "새 할당량을 사용할 수 있습니다.";
 "limit_reset_notification_body_with_account" = "계정 %@. 새 할당량을 사용할 수 있습니다.";
+"upcoming_reset_notifications_title" = "재설정 전 경고";
+"upcoming_reset_notifications_subtitle" = "주간 한도가 재설정되기 전, 할당량이 남아 있을 때 Codex에 대해 경고합니다.";
+"upcoming_reset_notification_title" = "%1$@ %2$@ 한도 곧 재설정됨";
+"upcoming_reset_notification_body" = "할당량의 %1$@이(가) 아직 사용되지 않았습니다. %2$@ 후에 재설정되며 사용하지 않은 할당량은 사라집니다.";
+"upcoming_reset_notification_body_with_account" = "계정 %1$@. 할당량의 %2$@이(가) 아직 사용되지 않았습니다. %3$@ 후에 재설정되며 사용하지 않은 할당량은 사라집니다.";
+"upcoming_reset_notification_last_call_body" = "마지막 기회: 할당량의 %1$@이(가) 아직 사용되지 않았습니다. %2$@ 후에 재설정됩니다.";
+"upcoming_reset_notification_last_call_body_with_account" = "계정 %1$@. 마지막 기회: 할당량의 %2$@이(가) 아직 사용되지 않았습니다. %3$@ 후에 재설정됩니다.";
 "quota_warning_warn_at" = "경고 기준";
 "quota_warning_global_threshold_subtitle" = "공급자가 재정의하지 않는 한 세션 및 주간 범위의 잔여 백분율입니다.";
 "quota_warning_sound" = "알림 소리 재생";

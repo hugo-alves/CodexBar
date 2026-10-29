@@ -565,6 +565,13 @@
 "limit_reset_notification_title" = "Лимит %1$@ сброшен (%2$@)";
 "limit_reset_notification_body" = "Новая квота доступна.";
 "limit_reset_notification_body_with_account" = "Аккаунт %@. Новая квота доступна.";
+"upcoming_reset_notifications_title" = "Предупреждения о скором сбросе";
+"upcoming_reset_notifications_subtitle" = "Предупреждает о скором сбросе недельного лимита Codex, пока квота ещё не израсходована.";
+"upcoming_reset_notification_title" = "Скоро сброс лимита %1$@ (%2$@)";
+"upcoming_reset_notification_body" = "%1$@ квоты ещё не израсходовано. Лимит сбросится через %2$@, а неизрасходованная квота пропадёт.";
+"upcoming_reset_notification_body_with_account" = "Аккаунт %1$@. %2$@ квоты ещё не израсходовано. Лимит сбросится через %3$@, а неизрасходованная квота пропадёт.";
+"upcoming_reset_notification_last_call_body" = "Последний шанс: %1$@ квоты ещё не израсходовано. Лимит сбросится через %2$@.";
+"upcoming_reset_notification_last_call_body_with_account" = "Аккаунт %1$@. Последний шанс: %2$@ квоты ещё не израсходовано. Лимит сбросится через %3$@.";
 "quota_warning_warn_at" = "Предупреждать при";
 "quota_warning_global_threshold_subtitle" = "Остаток в процентах для сессионного и недельного окон, если провайдер не переопределяет пороги.";
 "quota_warning_sound" = "Воспроизвести звук уведомления";

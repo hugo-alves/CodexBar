@@ -1309,6 +1309,13 @@
 "limit_reset_notification_title" = "Límit de %1$@ restablert (%2$@)";
 "limit_reset_notification_body" = "Hi ha quota nova disponible.";
 "limit_reset_notification_body_with_account" = "Compte %@. Hi ha quota nova disponible.";
+"upcoming_reset_notifications_title" = "Avisos abans del restabliment";
+"upcoming_reset_notifications_subtitle" = "Avisa per a Codex abans que el límit setmanal es restableixi mentre quedi quota per usar.";
+"upcoming_reset_notification_title" = "Límit de %1$@ a punt de restablir-se (%2$@)";
+"upcoming_reset_notification_body" = "Queda %1$@ de la quota per usar. Es reinicia en %2$@ i la quota no usada es perd.";
+"upcoming_reset_notification_body_with_account" = "Compte %1$@. Queda %2$@ de la quota per usar. Es reinicia en %3$@ i la quota no usada es perd.";
+"upcoming_reset_notification_last_call_body" = "Darrera oportunitat: queda %1$@ de la quota per usar. Es reinicia en %2$@.";
+"upcoming_reset_notification_last_call_body_with_account" = "Compte %1$@. Darrera oportunitat: queda %2$@ de la quota per usar. Es reinicia en %3$@.";
 "session_restored_notification_title" = "Quota de sessió de %@ restablerta";
 "Settings..." = "Configuració...";
 "Source" = "Origen";

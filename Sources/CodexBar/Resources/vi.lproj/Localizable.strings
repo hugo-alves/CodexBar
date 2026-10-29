@@ -560,6 +560,13 @@
 "limit_reset_notification_title" = "%1$@: giới hạn %2$@ đã được đặt lại";
 "limit_reset_notification_body" = "Hạn mức mới đã sẵn sàng.";
 "limit_reset_notification_body_with_account" = "Tài khoản %@. Hạn mức mới đã sẵn sàng.";
+"upcoming_reset_notifications_title" = "Cảnh báo trước khi đặt lại";
+"upcoming_reset_notifications_subtitle" = "Cảnh báo cho Codex trước khi giới hạn hàng tuần được đặt lại khi hạn mức còn chưa dùng.";
+"upcoming_reset_notification_title" = "%1$@: giới hạn %2$@ sắp được đặt lại";
+"upcoming_reset_notification_body" = "Còn %1$@ hạn mức chưa dùng. Giới hạn sẽ đặt lại sau %2$@ và hạn mức chưa dùng sẽ mất đi.";
+"upcoming_reset_notification_body_with_account" = "Tài khoản %1$@. Còn %2$@ hạn mức chưa dùng. Giới hạn sẽ đặt lại sau %3$@ và hạn mức chưa dùng sẽ mất đi.";
+"upcoming_reset_notification_last_call_body" = "Gọi lần cuối: còn %1$@ hạn mức chưa dùng. Giới hạn sẽ đặt lại sau %2$@.";
+"upcoming_reset_notification_last_call_body_with_account" = "Tài khoản %1$@. Gọi lần cuối: còn %2$@ hạn mức chưa dùng. Giới hạn sẽ đặt lại sau %3$@.";
 "quota_warning_warn_at" = "Cảnh báo ở";
 "quota_warning_global_threshold_subtitle" = "Tỷ lệ phần trăm còn lại cho phiên và thời lượng hàng tuần trừ khi Nhà cung cấp ghi đè chúng.";
 "quota_warning_sound" = "Phát âm thanh thông báo";

@@ -562,6 +562,13 @@
 "limit_reset_notification_title" = "%1$@ %2$@ Limit zurückgesetzt";
 "limit_reset_notification_body" = "Neues Kontingent ist verfügbar.";
 "limit_reset_notification_body_with_account" = "Konto %@. Neues Kontingent ist verfügbar.";
+"upcoming_reset_notifications_title" = "Warnungen vor anstehenden Resets";
+"upcoming_reset_notifications_subtitle" = "Warnt für Codex, bevor das Wochenlimit zurückgesetzt wird, solange das Kontingent noch ungenutzt ist.";
+"upcoming_reset_notification_title" = "%1$@: Reset steht bevor (%2$@)";
+"upcoming_reset_notification_body" = "%1$@ des Kontingents ist noch ungenutzt. Es wird in %2$@ zurückgesetzt; ungenutztes Kontingent verfällt.";
+"upcoming_reset_notification_body_with_account" = "Konto %1$@. %2$@ des Kontingents ist noch ungenutzt. Es wird in %3$@ zurückgesetzt; ungenutztes Kontingent verfällt.";
+"upcoming_reset_notification_last_call_body" = "Letzte Chance: %1$@ des Kontingents ist noch ungenutzt. Es wird in %2$@ zurückgesetzt.";
+"upcoming_reset_notification_last_call_body_with_account" = "Konto %1$@. Letzte Chance: %2$@ des Kontingents ist noch ungenutzt. Es wird in %3$@ zurückgesetzt.";
 "quota_warning_warn_at" = "Warnen Sie vor";
 "quota_warning_global_threshold_subtitle" = "Verbleibende Prozentsätze für Sitzungs- und Wochenfenster, es sei denn, ein Anbieter überschreibt sie.";
 "quota_warning_sound" = "Benachrichtigungston abspielen";

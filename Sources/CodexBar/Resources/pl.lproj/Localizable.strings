@@ -550,6 +550,13 @@
 "limit_reset_notification_title" = "Zresetowano limit %1$@ (%2$@)";
 "limit_reset_notification_body" = "Nowy limit jest dostępny.";
 "limit_reset_notification_body_with_account" = "Konto %@. Nowy limit jest dostępny.";
+"upcoming_reset_notifications_title" = "Ostrzeżenia o zbliżającym się resecie";
+"upcoming_reset_notifications_subtitle" = "Ostrzega przed resetem limitu tygodniowego Codex, gdy limit jest jeszcze niewykorzystany.";
+"upcoming_reset_notification_title" = "Niedługo reset limitu %1$@ (%2$@)";
+"upcoming_reset_notification_body" = "%1$@ limitu jest jeszcze niewykorzystane. Reset nastąpi za %2$@, a niewykorzystany limit przepadnie.";
+"upcoming_reset_notification_body_with_account" = "Konto %1$@. %2$@ limitu jest jeszcze niewykorzystane. Reset nastąpi za %3$@, a niewykorzystany limit przepadnie.";
+"upcoming_reset_notification_last_call_body" = "Ostatnia szansa: %1$@ limitu jest jeszcze niewykorzystane. Reset nastąpi za %2$@.";
+"upcoming_reset_notification_last_call_body_with_account" = "Konto %1$@. Ostatnia szansa: %2$@ limitu jest jeszcze niewykorzystane. Reset nastąpi za %3$@.";
 "quota_warning_warn_at" = "Ostrzegaj przy";
 "quota_warning_global_threshold_subtitle" = "Procent pozostałego limitu dla okien sesji i tygodnia, chyba że dostawca ma nadpisanie.";
 "quota_warning_sound" = "Odtwarzaj dźwięk powiadomienia";

@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "mimosa-hook-status/v1",
+  "recordedAt": "2026-10-29T20:44:15.489Z",
+  "sessionId": "session_e9138326451abd19237256264dea3b3d",
+  "event": "PostToolUse",
+  "toolName": "Edit",
+  "file": "gl.lproj/Localizable.strings",
+  "outcome": "clear",
+  "coverage": "complete",
+  "findingCount": 0,
+  "durationMs": 12,
+  "hostState": "hook_complete",
+  "reportHint": ".mimosa/reports/"
+}

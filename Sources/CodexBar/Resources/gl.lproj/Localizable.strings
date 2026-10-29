@@ -1337,6 +1337,13 @@
 "limit_reset_notification_title" = "Límite %2$@ de %1$@ restablecido";
 "limit_reset_notification_body" = "Hai cota nova dispoñible.";
 "limit_reset_notification_body_with_account" = "Conta %@. Hai cota nova dispoñible.";
+"upcoming_reset_notifications_title" = "Avisos antes do restablecemento";
+"upcoming_reset_notifications_subtitle" = "Avisa para Codex antes de que o límite semanal se restableza mentres quede cota sen usar.";
+"upcoming_reset_notification_title" = "Límite %2$@ de %1$@ a punto de restablecerse";
+"upcoming_reset_notification_body" = "Queda %1$@ da cota sen usar. Reiníciase en %2$@ e a cota non usada pérdese.";
+"upcoming_reset_notification_body_with_account" = "Conta %1$@. Queda %2$@ da cota sen usar. Reiníciase en %3$@ e a cota non usada pérdese.";
+"upcoming_reset_notification_last_call_body" = "Última oportunidade: queda %1$@ da cota sen usar. Reiníciase en %2$@.";
+"upcoming_reset_notification_last_call_body_with_account" = "Conta %1$@. Última oportunidade: queda %2$@ da cota sen usar. Reiníciase en %3$@.";
 "session_restored_notification_title" = "Sesión de %@ restaurada";
 "today" = "hoxe";
 "usage_percent_suffix_left" = "restante";

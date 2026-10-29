@@ -1414,6 +1414,10 @@ extension UsageStore {
                 provider: .codex,
                 snapshot: snapshot,
                 accountDiscriminator: codexOwnerKey?.rawValue)
+            self.handleUpcomingResetWarning(
+                provider: .codex,
+                snapshot: snapshot,
+                accountDiscriminator: codexOwnerKey?.rawValue)
             let sessionRestored = self.handleSessionQuotaTransition(
                 provider: .codex,
                 snapshot: snapshot,
@@ -1497,6 +1501,10 @@ extension UsageStore {
                 from: self.lastKnownResetSnapshots[provider.instanceID])
             let warningAccountDiscriminator = Self.warningTokenAccountDiscriminator(account)
             self.handleQuotaWarningTransitions(
+                provider: provider,
+                snapshot: backfilled,
+                accountDiscriminator: warningAccountDiscriminator)
+            self.handleUpcomingResetWarning(
                 provider: provider,
                 snapshot: backfilled,
                 accountDiscriminator: warningAccountDiscriminator)

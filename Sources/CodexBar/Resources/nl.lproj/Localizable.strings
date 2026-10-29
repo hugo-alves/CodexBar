@@ -564,6 +564,13 @@
 "limit_reset_notification_title" = "%1$@ %2$@ limiet gereset";
 "limit_reset_notification_body" = "Er is weer nieuw quotum beschikbaar.";
 "limit_reset_notification_body_with_account" = "Account %@. Er is weer nieuw quotum beschikbaar.";
+"upcoming_reset_notifications_title" = "Waarschuwingen voor aankomende reset";
+"upcoming_reset_notifications_subtitle" = "Waarschuwt voor Codex voordat het weeklimiet wordt gereset terwijl er nog quotum ongebruikt is.";
+"upcoming_reset_notification_title" = "%1$@ %2$@ limiet wordt binnenkort gereset";
+"upcoming_reset_notification_body" = "%1$@ van het quotum is nog ongebruikt. Het wordt over %2$@ gereset en ongebruikt quotum gaat verloren.";
+"upcoming_reset_notification_body_with_account" = "Account %1$@. %2$@ van het quotum is nog ongebruikt. Het wordt over %3$@ gereset en ongebruikt quotum gaat verloren.";
+"upcoming_reset_notification_last_call_body" = "Laatste kans: %1$@ van het quotum is nog ongebruikt. Het wordt over %2$@ gereset.";
+"upcoming_reset_notification_last_call_body_with_account" = "Account %1$@. Laatste kans: %2$@ van het quotum is nog ongebruikt. Het wordt over %3$@ gereset.";
 "quota_warning_warn_at" = "Waarschuw bij";
 "quota_warning_global_threshold_subtitle" = "Resterende percentages voor sessie- en wekelijkse vensters, tenzij een provider deze overschrijft.";
 "quota_warning_sound" = "Meldingsgeluid afspelen";

@@ -548,6 +548,13 @@
 "limit_reset_notification_title" = "%1$@ %2$@ limiti sıfırlandı";
 "limit_reset_notification_body" = "Yeni kota kullanılabilir.";
 "limit_reset_notification_body_with_account" = "Hesap %@. Yeni kota kullanılabilir.";
+"upcoming_reset_notifications_title" = "Yaklaşan sıfırlama uyarıları";
+"upcoming_reset_notifications_subtitle" = "Codex için haftalık limit sıfırlanmadan önce, kota kullanılmamışken uyarır.";
+"upcoming_reset_notification_title" = "%1$@ %2$@ limiti yakında sıfırlanacak";
+"upcoming_reset_notification_body" = "Henüz %1$@ kota kullanılmadı. %2$@ içinde sıfırlanacak ve kullanılmayan kota kaybolacak.";
+"upcoming_reset_notification_body_with_account" = "Hesap %1$@. Henüz %2$@ kota kullanılmadı. %3$@ içinde sıfırlanacak ve kullanılmayan kota kaybolacak.";
+"upcoming_reset_notification_last_call_body" = "Son çağrı: Henüz %1$@ kota kullanılmadı. %2$@ içinde sıfırlanacak.";
+"upcoming_reset_notification_last_call_body_with_account" = "Hesap %1$@. Son çağrı: Henüz %2$@ kota kullanılmadı. %3$@ içinde sıfırlanacak.";
 "quota_warning_warn_at" = "Uyarı eşikleri";
 "quota_warning_global_threshold_subtitle" = "Bir sağlayıcı kendi değerini belirlemedikçe oturum ve haftalık pencereler için kalan kota yüzdesi eşiklerini belirler.";
 "quota_warning_sound" = "Bildirim sesi çal";

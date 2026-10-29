@@ -548,6 +548,13 @@
 "limit_reset_notification_title" = "محدودیت %2$@ در %1$@ بازنشانی شد";
 "limit_reset_notification_body" = "سهمیه جدید در دسترس است.";
 "limit_reset_notification_body_with_account" = "حساب %@. سهمیه جدید در دسترس است.";
+"upcoming_reset_notifications_title" = "هشدارهای پیش از بازنشانی";
+"upcoming_reset_notifications_subtitle" = "برای Codex پیش از بازنشانی محدودیت هفتگی، وقتی سهمیه هنوز مصرف نشده هشدار می‌دهد.";
+"upcoming_reset_notification_title" = "محدودیت %2$@ در %1$@ به‌زودی بازنشانی می‌شود";
+"upcoming_reset_notification_body" = "هنوز %1$@ از سهمیه استفاده نشده است. در %2$@ بازنشانی می‌شود و سهمیه استفاده‌نشده از دست می‌رود.";
+"upcoming_reset_notification_body_with_account" = "حساب %1$@. هنوز %2$@ از سهمیه استفاده نشده است. در %3$@ بازنشانی می‌شود و سهمیه استفاده‌نشده از دست می‌رود.";
+"upcoming_reset_notification_last_call_body" = "آخرین فرصت: هنوز %1$@ از سهمیه استفاده نشده است. در %2$@ بازنشانی می‌شود.";
+"upcoming_reset_notification_last_call_body_with_account" = "حساب %1$@. آخرین فرصت: هنوز %2$@ از سهمیه استفاده نشده است. در %3$@ بازنشانی می‌شود.";
 "quota_warning_warn_at" = "هشدار در";
 "quota_warning_global_threshold_subtitle" = "درصدهای باقی مانده برای جلسات و بازه های هفتگی مگر اینکه ارائه دهنده آن ها را لغو کند.";
 "quota_warning_sound" = "صدای اعلان پخش کن";

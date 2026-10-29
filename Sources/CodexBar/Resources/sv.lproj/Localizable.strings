@@ -564,6 +564,13 @@
 "limit_reset_notification_title" = "Gräns för %1$@ återställd (%2$@)";
 "limit_reset_notification_body" = "Ny kvot är tillgänglig.";
 "limit_reset_notification_body_with_account" = "Konto %@. Ny kvot är tillgänglig.";
+"upcoming_reset_notifications_title" = "Varningar för kommande återställning";
+"upcoming_reset_notifications_subtitle" = "Varnar för Codex innan veckogränsen återställs medan kvoten fortfarande är delvis oanvänd.";
+"upcoming_reset_notification_title" = "Gräns för %1$@ återställs snart (%2$@)";
+"upcoming_reset_notification_body" = "%1$@ av kvoten används fortfarande inte. Den återställs om %2$@ och oanvänd kvot går förlorad.";
+"upcoming_reset_notification_body_with_account" = "Konto %1$@. %2$@ av kvoten används fortfarande inte. Den återställs om %3$@ och oanvänd kvot går förlorad.";
+"upcoming_reset_notification_last_call_body" = "Sista chansen: %1$@ av kvoten används fortfarande inte. Den återställs om %2$@.";
+"upcoming_reset_notification_last_call_body_with_account" = "Konto %1$@. Sista chansen: %2$@ av kvoten används fortfarande inte. Den återställs om %3$@.";
 "quota_warning_warn_at" = "Varna vid";
 "quota_warning_global_threshold_subtitle" = "Återstående procent för sessions- och veckofönster, om inte en leverantör åsidosätter dem.";
 "quota_warning_sound" = "Spela aviseringsljud";

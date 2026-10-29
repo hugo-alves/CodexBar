@@ -1335,6 +1335,13 @@
 "limit_reset_notification_title" = "%1$@: límite de %2$@ reiniciado";
 "limit_reset_notification_body" = "Hay cuota nueva disponible.";
 "limit_reset_notification_body_with_account" = "Cuenta %@. Hay cuota nueva disponible.";
+"upcoming_reset_notifications_title" = "Avisos de reinicio próximo";
+"upcoming_reset_notifications_subtitle" = "Avisa para Codex antes de que se reinicie el límite semanal mientras quede cuota sin usar.";
+"upcoming_reset_notification_title" = "%1$@: el límite de %2$@ se reinicia pronto";
+"upcoming_reset_notification_body" = "Queda %1$@ de la cuota sin usar. Se reinicia en %2$@ y la cuota no usada se pierde.";
+"upcoming_reset_notification_body_with_account" = "Cuenta %1$@. Queda %2$@ de la cuota sin usar. Se reinicia en %3$@ y la cuota no usada se pierde.";
+"upcoming_reset_notification_last_call_body" = "Última llamada: queda %1$@ de la cuota sin usar. Se reinicia en %2$@.";
+"upcoming_reset_notification_last_call_body_with_account" = "Cuenta %1$@. Última llamada: queda %2$@ de la cuota sin usar. Se reinicia en %3$@.";
 "session_restored_notification_title" = "Cuota de sesión de %@ restablecida";
 "Settings..." = "Ajustes...";
 "Sign in with Claude Code..." = "Iniciar sesión con Claude Code...";

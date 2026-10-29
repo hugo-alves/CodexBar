@@ -531,6 +531,13 @@
 "limit_reset_notification_title" = "%1$@ %2$@ limit reset";
 "limit_reset_notification_body" = "Fresh quota is available.";
 "limit_reset_notification_body_with_account" = "Account %@. Fresh quota is available.";
+"upcoming_reset_notifications_title" = "Upcoming reset warnings";
+"upcoming_reset_notifications_subtitle" = "Warns for Codex before the weekly limit resets while quota is unused.";
+"upcoming_reset_notification_title" = "%1$@ %2$@ reset soon";
+"upcoming_reset_notification_body" = "%1$@ of the quota is still unused. It resets in %2$@ and unused quota is lost.";
+"upcoming_reset_notification_body_with_account" = "Account %1$@. %2$@ of the quota is still unused. It resets in %3$@ and unused quota is lost.";
+"upcoming_reset_notification_last_call_body" = "Last call: %1$@ of the quota is still unused. It resets in %2$@.";
+"upcoming_reset_notification_last_call_body_with_account" = "Account %1$@. Last call: %2$@ of the quota is still unused. It resets in %3$@.";
 "quota_warning_warn_at" = "Warn at";
 "quota_warning_global_threshold_subtitle" = "Remaining percentages for session and weekly windows unless a provider overrides them.";
 "quota_warning_sound" = "Play notification sound";

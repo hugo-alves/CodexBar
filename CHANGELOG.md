@@ -2,6 +2,10 @@
 
 ## 0.82.1 — Unreleased
 
+### Added
+
+- Codex: optional upcoming-reset warnings that notify 24 hours and again one hour before the weekly limit resets while quota is still unused, so banked quota is spent instead of lost.
+
 ## 0.82.0 — 2026-10-26
 
 ### Highlights

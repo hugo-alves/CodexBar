@@ -548,6 +548,13 @@
 "limit_reset_notification_title" = "تمت إعادة تعيين حد %2$@ لدى %1$@";
 "limit_reset_notification_body" = "تتوفر حصة جديدة.";
 "limit_reset_notification_body_with_account" = "الحساب %@. تتوفر حصة جديدة.";
+"upcoming_reset_notifications_title" = "تحذيرات قبل إعادة التعيين";
+"upcoming_reset_notifications_subtitle" = "يحذّر قبل إعادة تعيين الحد الأسبوعي لدى Codex مع بقاء حصة غير مستخدمة.";
+"upcoming_reset_notification_title" = "حد %2$@ لدى %1$@ سيُعاد تعيينه قريبًا";
+"upcoming_reset_notification_body" = "لا يزال %1$@ من الحصة غير مستخدم. سيُعاد تعيين الحد خلال %2$@ وتضيع الحصة غير المستخدمة.";
+"upcoming_reset_notification_body_with_account" = "الحساب %1$@. لا يزال %2$@ من الحصة غير مستخدم. سيُعاد تعيين الحد خلال %3$@ وتضيع الحصة غير المستخدمة.";
+"upcoming_reset_notification_last_call_body" = "فرصة أخيرة: لا يزال %1$@ من الحصة غير مستخدم. سيُعاد تعيين الحد خلال %2$@.";
+"upcoming_reset_notification_last_call_body_with_account" = "الحساب %1$@. فرصة أخيرة: لا يزال %2$@ من الحصة غير مستخدم. سيُعاد تعيين الحد خلال %3$@.";
 "quota_warning_warn_at" = "التحذير في";
 "quota_warning_global_threshold_subtitle" = "النسب المتبقية للجلسات والفترات الأسبوعية ما لم يتجاوزها مقدم الخدمة.";
 "quota_warning_sound" = "تشغيل صوت الإشعار";

@@ -561,6 +561,13 @@
 "limit_reset_notification_title" = "%1$@ の%2$@上限がリセットされました";
 "limit_reset_notification_body" = "新しいクォータが利用可能です。";
 "limit_reset_notification_body_with_account" = "アカウント %@。新しいクォータが利用可能です。";
+"upcoming_reset_notifications_title" = "リセット前の警告";
+"upcoming_reset_notifications_subtitle" = "週間上限のリセット前に、クォータがまだ残っている場合にCodexに警告します。";
+"upcoming_reset_notification_title" = "%1$@ の%2$@上限がまもなくリセットされます";
+"upcoming_reset_notification_body" = "クォータの%1$@がまだ未使用です。%2$@後にリセットされ、未使用のクォータは失われます。";
+"upcoming_reset_notification_body_with_account" = "アカウント %1$@。クォータの%2$@がまだ未使用です。%3$@後にリセットされ、未使用のクォータは失われます。";
+"upcoming_reset_notification_last_call_body" = "ラストチャンス：クォータの%1$@がまだ未使用です。%2$@後にリセットされます。";
+"upcoming_reset_notification_last_call_body_with_account" = "アカウント %1$@。ラストチャンス：クォータの%2$@がまだ未使用です。%3$@後にリセットされます。";
 "quota_warning_warn_at" = "警告する残量";
 "quota_warning_global_threshold_subtitle" = "プロバイダ側で上書きされない限り、セッションおよび週間ウインドウの残量パーセントに適用されます。";
 "quota_warning_sound" = "通知音を再生";
