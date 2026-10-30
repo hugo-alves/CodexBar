@@ -650,7 +650,7 @@ final class SessionQuotaNotifier: SessionQuotaNotifying {
             providerName: providerName,
             event: event,
             now: now)
-        let idPrefix = "upcoming-reset-\(provider.rawValue)-\(event.isLastCall ? "last-call" : "early")"
+        let idPrefix = "upcoming-reset-\(provider.rawValue)"
         self.logger.info("enqueuing", metadata: ["prefix": idPrefix])
         AppNotifications.shared.post(idPrefix: idPrefix, title: copy.title, body: copy.body, isCurrent: isCurrent)
     }

@@ -160,6 +160,7 @@
 "Individual credits" = "หน่วยกิตส่วนบุคคล";
 "Workspace" = "พื้นที่ทํางาน";
 "Credits history" = "ประวัติเครดิต";
+"Cursor app session expired — open Cursor to sign in again, or sign in to cursor.com in your browser." = "เซสชันของแอป Cursor หมดอายุแล้ว — เปิด Cursor เพื่อเข้าสู่ระบบอีกครั้ง หรือเข้าสู่ระบบที่ cursor.com ในเบราว์เซอร์ของคุณ";
 "Cursor login failed" = "การเข้าสู่ระบบ Cursor ล้มเหลว";
 "Custom" = "กําหนดเอง";
 "Custom Path" = "เส้นทางที่กําหนดเอง";
@@ -553,8 +554,6 @@
 "upcoming_reset_notification_title" = "ขีดจำกัด%2$@ของ %1$@ จะรีเซ็ตเร็ว ๆ นี้";
 "upcoming_reset_notification_body" = "ยังมีโควตา %1$@ ที่ไม่ได้ใช้ จะรีเซ็ตในอีก %2$@ และโควตาที่ไม่ได้ใช้จะหายไป";
 "upcoming_reset_notification_body_with_account" = "บัญชี %1$@ ยังมีโควตา %2$@ ที่ไม่ได้ใช้ จะรีเซ็ตในอีก %3$@ และโควตาที่ไม่ได้ใช้จะหายไป";
-"upcoming_reset_notification_last_call_body" = "โอกาสสุดท้าย: ยังมีโควตา %1$@ ที่ไม่ได้ใช้ จะรีเซ็ตในอีก %2$@";
-"upcoming_reset_notification_last_call_body_with_account" = "บัญชี %1$@ โอกาสสุดท้าย: ยังมีโควตา %2$@ ที่ไม่ได้ใช้ จะรีเซ็ตในอีก %3$@";
 "quota_warning_warn_at" = "เตือนที่";
 "quota_warning_global_threshold_subtitle" = "เปอร์เซ็นต์ที่เหลืออยู่สําหรับกรอบเวลาเซสชันและรายสัปดาห์ เว้นแต่ผู้ให้บริการจะแทนที่";
 "quota_warning_sound" = "เล่นเสียงแจ้งเตือน";

@@ -160,6 +160,7 @@
 "Individual credits" = "Kredit individual";
 "Workspace" = "Ruang kerja";
 "Credits history" = "Riwayat kredit";
+"Cursor app session expired — open Cursor to sign in again, or sign in to cursor.com in your browser." = "Sesi aplikasi Cursor telah kedaluwarsa — buka Cursor untuk masuk kembali, atau masuk ke cursor.com di browser Anda.";
 "Cursor login failed" = "Login Cursor gagal";
 "Custom" = "Kustom";
 "Custom Path" = "Path Kustom";
@@ -555,8 +556,6 @@
 "upcoming_reset_notification_title" = "Batas %2$@ %1$@ segera direset";
 "upcoming_reset_notification_body" = "%1$@ kuota masih belum terpakai. Batas direset dalam %2$@ dan kuota yang belum terpakai akan hilang.";
 "upcoming_reset_notification_body_with_account" = "Akun %1$@. %2$@ kuota masih belum terpakai. Batas direset dalam %3$@ dan kuota yang belum terpakai akan hilang.";
-"upcoming_reset_notification_last_call_body" = "Kesempatan terakhir: %1$@ kuota masih belum terpakai. Batas direset dalam %2$@.";
-"upcoming_reset_notification_last_call_body_with_account" = "Akun %1$@. Kesempatan terakhir: %2$@ kuota masih belum terpakai. Batas direset dalam %3$@.";
 "quota_warning_warn_at" = "Peringatkan pada";
 "quota_warning_global_threshold_subtitle" = "Persentase sisa untuk jendela sesi dan mingguan kecuali penyedia menimpanya.";
 "quota_warning_sound" = "Mainkan suara notifikasi";

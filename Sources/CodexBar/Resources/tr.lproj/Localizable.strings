@@ -160,6 +160,7 @@
 "Individual credits" = "Bireysel krediler";
 "Workspace" = "Çalışma alanı";
 "Credits history" = "Kredi geçmişi";
+"Cursor app session expired — open Cursor to sign in again, or sign in to cursor.com in your browser." = "Cursor uygulama oturumunun süresi doldu — yeniden giriş yapmak için Cursor’ı açın veya tarayıcınızda cursor.com’a giriş yapın.";
 "Cursor login failed" = "Cursor girişi başarısız";
 "Custom" = "Özel";
 "Custom Path" = "Özel yol";
@@ -553,8 +554,6 @@
 "upcoming_reset_notification_title" = "%1$@ %2$@ limiti yakında sıfırlanacak";
 "upcoming_reset_notification_body" = "Henüz %1$@ kota kullanılmadı. %2$@ içinde sıfırlanacak ve kullanılmayan kota kaybolacak.";
 "upcoming_reset_notification_body_with_account" = "Hesap %1$@. Henüz %2$@ kota kullanılmadı. %3$@ içinde sıfırlanacak ve kullanılmayan kota kaybolacak.";
-"upcoming_reset_notification_last_call_body" = "Son çağrı: Henüz %1$@ kota kullanılmadı. %2$@ içinde sıfırlanacak.";
-"upcoming_reset_notification_last_call_body_with_account" = "Hesap %1$@. Son çağrı: Henüz %2$@ kota kullanılmadı. %3$@ içinde sıfırlanacak.";
 "quota_warning_warn_at" = "Uyarı eşikleri";
 "quota_warning_global_threshold_subtitle" = "Bir sağlayıcı kendi değerini belirlemedikçe oturum ve haftalık pencereler için kalan kota yüzdesi eşiklerini belirler.";
 "quota_warning_sound" = "Bildirim sesi çal";

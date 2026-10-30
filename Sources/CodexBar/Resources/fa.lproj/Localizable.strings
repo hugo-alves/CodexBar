@@ -160,6 +160,7 @@
 "Individual credits" = "اعتبارات فردی";
 "Workspace" = "فضای کاری";
 "Credits history" = "تاریخچه اعتبارها";
+"Cursor app session expired — open Cursor to sign in again, or sign in to cursor.com in your browser." = "نشست برنامهٔ Cursor منقضی شده است — Cursor را باز کنید و دوباره وارد شوید، یا در مرورگر خود وارد cursor.com شوید.";
 "Cursor login failed" = "ورود Cursor ناموفق";
 "Custom" = "عرف";
 "Custom Path" = "مسیر سفارشی";
@@ -553,8 +554,6 @@
 "upcoming_reset_notification_title" = "محدودیت %2$@ در %1$@ به‌زودی بازنشانی می‌شود";
 "upcoming_reset_notification_body" = "هنوز %1$@ از سهمیه استفاده نشده است. در %2$@ بازنشانی می‌شود و سهمیه استفاده‌نشده از دست می‌رود.";
 "upcoming_reset_notification_body_with_account" = "حساب %1$@. هنوز %2$@ از سهمیه استفاده نشده است. در %3$@ بازنشانی می‌شود و سهمیه استفاده‌نشده از دست می‌رود.";
-"upcoming_reset_notification_last_call_body" = "آخرین فرصت: هنوز %1$@ از سهمیه استفاده نشده است. در %2$@ بازنشانی می‌شود.";
-"upcoming_reset_notification_last_call_body_with_account" = "حساب %1$@. آخرین فرصت: هنوز %2$@ از سهمیه استفاده نشده است. در %3$@ بازنشانی می‌شود.";
 "quota_warning_warn_at" = "هشدار در";
 "quota_warning_global_threshold_subtitle" = "درصدهای باقی مانده برای جلسات و بازه های هفتگی مگر اینکه ارائه دهنده آن ها را لغو کند.";
 "quota_warning_sound" = "صدای اعلان پخش کن";

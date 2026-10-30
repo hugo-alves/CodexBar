@@ -180,6 +180,7 @@
 "Individual credits" = "个人额度";
 "Workspace" = "工作区";
 "Credits history" = "额度记录";
+"Cursor app session expired — open Cursor to sign in again, or sign in to cursor.com in your browser." = "Cursor 应用会话已过期 — 请打开 Cursor 重新登录，或在浏览器中登录 cursor.com。";
 "Cursor login failed" = "Cursor 登录失败";
 "Custom" = "自定义";
 "Custom Path" = "自定义路径";
@@ -1089,8 +1090,6 @@
 "upcoming_reset_notification_title" = "%1$@ %2$@额度即将重置";
 "upcoming_reset_notification_body" = "还有 %1$@ 的额度未使用。额度将在 %2$@ 后重置，未使用的额度将失效。";
 "upcoming_reset_notification_body_with_account" = "账户 %1$@。还有 %2$@ 的额度未使用。额度将在 %3$@ 后重置，未使用的额度将失效。";
-"upcoming_reset_notification_last_call_body" = "最后提醒：还有 %1$@ 的额度未使用。额度将在 %2$@ 后重置。";
-"upcoming_reset_notification_last_call_body_with_account" = "账户 %1$@。最后提醒：还有 %2$@ 的额度未使用。额度将在 %3$@ 后重置。";
 "quota_warning_notification_title" = "%1$@ 的 %2$@ 额度偏低";
 "quota_warning_notification_body" = "剩余 %1$@。已达到 %2$d%% 的 %3$@ 预警阈值。";
 "quota_warning_notification_body_with_account" = "账户 %1$@。剩余 %2$@。已达到 %3$d%% 的 %4$@ 预警阈值。";

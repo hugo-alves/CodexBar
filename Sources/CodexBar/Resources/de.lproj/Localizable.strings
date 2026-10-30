@@ -175,6 +175,7 @@
 "Top-up credits" = "Aufgeladene Credits";
 "Remaining" = "Übrig";
 "Credits history" = "Credits-Geschichte";
+"Cursor app session expired — open Cursor to sign in again, or sign in to cursor.com in your browser." = "Die Sitzung der Cursor-App ist abgelaufen — öffne Cursor, um dich erneut anzumelden, oder melde dich im Browser bei cursor.com an.";
 "Cursor login failed" = "Die Cursor-Anmeldung ist fehlgeschlagen";
 "Custom" = "Benutzerdefiniert";
 "Custom Path" = "Benutzerdefinierter Pfad";
@@ -567,8 +568,6 @@
 "upcoming_reset_notification_title" = "%1$@: Reset steht bevor (%2$@)";
 "upcoming_reset_notification_body" = "%1$@ des Kontingents ist noch ungenutzt. Es wird in %2$@ zurückgesetzt; ungenutztes Kontingent verfällt.";
 "upcoming_reset_notification_body_with_account" = "Konto %1$@. %2$@ des Kontingents ist noch ungenutzt. Es wird in %3$@ zurückgesetzt; ungenutztes Kontingent verfällt.";
-"upcoming_reset_notification_last_call_body" = "Letzte Chance: %1$@ des Kontingents ist noch ungenutzt. Es wird in %2$@ zurückgesetzt.";
-"upcoming_reset_notification_last_call_body_with_account" = "Konto %1$@. Letzte Chance: %2$@ des Kontingents ist noch ungenutzt. Es wird in %3$@ zurückgesetzt.";
 "quota_warning_warn_at" = "Warnen Sie vor";
 "quota_warning_global_threshold_subtitle" = "Verbleibende Prozentsätze für Sitzungs- und Wochenfenster, es sei denn, ein Anbieter überschreibt sie.";
 "quota_warning_sound" = "Benachrichtigungston abspielen";

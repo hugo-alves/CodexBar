@@ -177,6 +177,7 @@
 "Individual credits" = "個人クレジット";
 "Workspace" = "ワークスペース";
 "Credits history" = "クレジット履歴";
+"Cursor app session expired — open Cursor to sign in again, or sign in to cursor.com in your browser." = "Cursorアプリのセッションの有効期限が切れました。Cursorを開いて再度ログインするか、ブラウザでcursor.comにログインしてください。";
 "Cursor login failed" = "Cursor のログインに失敗しました";
 "Custom" = "カスタム";
 "Custom Path" = "カスタムパス";
@@ -566,8 +567,6 @@
 "upcoming_reset_notification_title" = "%1$@ の%2$@上限がまもなくリセットされます";
 "upcoming_reset_notification_body" = "クォータの%1$@がまだ未使用です。%2$@後にリセットされ、未使用のクォータは失われます。";
 "upcoming_reset_notification_body_with_account" = "アカウント %1$@。クォータの%2$@がまだ未使用です。%3$@後にリセットされ、未使用のクォータは失われます。";
-"upcoming_reset_notification_last_call_body" = "ラストチャンス：クォータの%1$@がまだ未使用です。%2$@後にリセットされます。";
-"upcoming_reset_notification_last_call_body_with_account" = "アカウント %1$@。ラストチャンス：クォータの%2$@がまだ未使用です。%3$@後にリセットされます。";
 "quota_warning_warn_at" = "警告する残量";
 "quota_warning_global_threshold_subtitle" = "プロバイダ側で上書きされない限り、セッションおよび週間ウインドウの残量パーセントに適用されます。";
 "quota_warning_sound" = "通知音を再生";

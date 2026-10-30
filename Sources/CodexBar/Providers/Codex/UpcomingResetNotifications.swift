@@ -12,10 +12,6 @@ enum UpcomingResetStage: Int, Codable, CaseIterable, Equatable {
         case .lastCall: 60 * 60
         }
     }
-
-    var isLastCall: Bool {
-        self == .lastCall
-    }
 }
 
 struct UpcomingResetNotificationState: Codable, Equatable {
@@ -26,7 +22,6 @@ struct UpcomingResetNotificationState: Codable, Equatable {
 struct UpcomingResetWarningEvent: Equatable {
     let resetsAt: Date
     let remainingPercent: Double
-    let isLastCall: Bool
     let accountDisplayName: String?
 }
 
@@ -43,9 +38,10 @@ enum UpcomingResetNotificationLogic {
         var state = previousState.flatMap { $0.resetBoundary == resetsAt ? $0 : nil }
             ?? UpcomingResetNotificationState(resetBoundary: resetsAt, firedStages: [])
         guard let stage = UpcomingResetStage.allCases
-            .last(where: { !state.firedStages.contains($0) && resetsAt.timeIntervalSince(now) <= $0.leadTime })
+            .last(where: { resetsAt.timeIntervalSince(now) <= $0.leadTime }),
+            !state.firedStages.contains(stage)
         else { return nil }
-        state.firedStages.insert(stage)
+        state.firedStages.formUnion(UpcomingResetStage.allCases.filter { $0.rawValue <= stage.rawValue })
         return (stage, state)
     }
 
@@ -60,22 +56,10 @@ enum UpcomingResetNotificationLogic {
             QuotaWarningWindow.weekly.localizedNotificationDisplayName)
         let remainingText = UsageFormatter.percentString(event.remainingPercent)
         let durationText = UsageFormatter.resetCountdownDuration(from: event.resetsAt, now: now)
-        let body: String = if event.isLastCall {
-            if let accountDisplayName = event.accountDisplayName {
-                L(
-                    "upcoming_reset_notification_last_call_body_with_account",
-                    accountDisplayName,
-                    remainingText,
-                    durationText)
-            } else {
-                L("upcoming_reset_notification_last_call_body", remainingText, durationText)
-            }
+        let body = if let accountDisplayName = event.accountDisplayName {
+            L("upcoming_reset_notification_body_with_account", accountDisplayName, remainingText, durationText)
         } else {
-            if let accountDisplayName = event.accountDisplayName {
-                L("upcoming_reset_notification_body_with_account", accountDisplayName, remainingText, durationText)
-            } else {
-                L("upcoming_reset_notification_body", remainingText, durationText)
-            }
+            L("upcoming_reset_notification_body", remainingText, durationText)
         }
         return (title, body)
     }
@@ -94,8 +78,14 @@ extension UsageStore {
         now: Date = .init())
     {
         guard provider == .codex, self.settings.upcomingResetNotificationsEnabled else { return }
-        guard let weekly = snapshot.secondary?.measured, let resetsAt = weekly.resetsAt else { return }
-        let key = "\(provider.instanceID.rawValue):\(accountDiscriminator ?? "default")"
+        guard let weekly = snapshot.secondary?.measured, weekly.windowMinutes == 7 * 24 * 60,
+              let resetsAt = weekly.resetsAt,
+              weekly.remainingPercent.isFinite, weekly.remainingPercent > 0,
+              let owner = accountDiscriminator ?? CodexIdentityResolver
+                  .normalizeEmail(snapshot.accountEmail(for: .codex))
+                  .map(CodexHistoryOwnership.canonicalEmailHashKey(for:))
+        else { return }
+        let key = "\(provider.instanceID.rawValue):\(owner)"
         var states: [String: UpcomingResetNotificationState] = Self.loadPlanUtilizationStates(
             from: self.settings.userDefaults,
             defaultsKey: Self.upcomingResetNotificationStatesDefaultsKey,
@@ -115,13 +105,12 @@ extension UsageStore {
             event: UpcomingResetWarningEvent(
                 resetsAt: resetsAt,
                 remainingPercent: weekly.remainingPercent,
-                isLastCall: crossed.stage.isLastCall,
                 accountDisplayName: accountDisplayName),
             provider: provider,
             now: now,
             isCurrent: { [weak self] in
                 guard let self else { return false }
-                return self.settings.upcomingResetNotificationsEnabled
+                return self.settings.upcomingResetNotificationsEnabled && self.isEnabled(.codex)
                     && (accountDisplayName == nil || !self.settings.hidePersonalInfo)
             })
     }

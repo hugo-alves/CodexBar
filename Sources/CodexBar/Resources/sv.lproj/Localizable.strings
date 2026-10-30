@@ -177,6 +177,7 @@
 "Individual credits" = "Individuella krediter";
 "Workspace" = "Arbetsyta";
 "Credits history" = "Kredithistorik";
+"Cursor app session expired — open Cursor to sign in again, or sign in to cursor.com in your browser." = "Sessionen i Cursor-appen har gått ut — öppna Cursor för att logga in igen eller logga in på cursor.com i webbläsaren.";
 "Cursor login failed" = "Cursor-inloggning misslyckades";
 "Custom" = "Anpassat";
 "Custom Path" = "Anpassad sökväg";
@@ -569,8 +570,6 @@
 "upcoming_reset_notification_title" = "Gräns för %1$@ återställs snart (%2$@)";
 "upcoming_reset_notification_body" = "%1$@ av kvoten används fortfarande inte. Den återställs om %2$@ och oanvänd kvot går förlorad.";
 "upcoming_reset_notification_body_with_account" = "Konto %1$@. %2$@ av kvoten används fortfarande inte. Den återställs om %3$@ och oanvänd kvot går förlorad.";
-"upcoming_reset_notification_last_call_body" = "Sista chansen: %1$@ av kvoten används fortfarande inte. Den återställs om %2$@.";
-"upcoming_reset_notification_last_call_body_with_account" = "Konto %1$@. Sista chansen: %2$@ av kvoten används fortfarande inte. Den återställs om %3$@.";
 "quota_warning_warn_at" = "Varna vid";
 "quota_warning_global_threshold_subtitle" = "Återstående procent för sessions- och veckofönster, om inte en leverantör åsidosätter dem.";
 "quota_warning_sound" = "Spela aviseringsljud";

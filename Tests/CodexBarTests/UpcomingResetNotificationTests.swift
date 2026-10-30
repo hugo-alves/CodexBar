@@ -114,7 +114,11 @@ struct UpcomingResetNotificationTests {
             resetsAt: boundary,
             now: Self.start)
         #expect(crossed?.stage == .lastCall)
-        #expect(crossed?.state.firedStages == [.lastCall])
+        #expect(crossed?.state.firedStages == [.earlyWarning, .lastCall])
+        #expect(UpcomingResetNotificationLogic.crossedStage(
+            previousState: crossed?.state,
+            resetsAt: boundary,
+            now: Self.start.addingTimeInterval(60)) == nil)
     }
 
     @Test
@@ -181,7 +185,6 @@ struct UpcomingResetNotificationTests {
             now: boundary.addingTimeInterval(-30 * 60))
 
         #expect(notifier.upcomingResetPosts.count == 2)
-        #expect(notifier.upcomingResetPosts.map(\.event.isLastCall) == [false, true])
         #expect(notifier.upcomingResetPosts.map(\.event.remainingPercent) == [70, 70])
         #expect(notifier.upcomingResetPosts.first?.event.accountDisplayName == Self.accountEmail)
     }
@@ -291,6 +294,78 @@ struct UpcomingResetNotificationTests {
         #expect(!isCurrent())
     }
 
+    @Test
+    func `exhausted quota does not consume the upcoming reset stage`() {
+        let notifier = NotifierSpy()
+        let store = Self.makeStore(notifier: notifier)
+        store.settings.upcomingResetNotificationsEnabled = true
+        let boundary = Self.start.addingTimeInterval(1800)
+        for used in [100.0, 120, Double.nan] {
+            store.handleUpcomingResetWarning(
+                provider: .codex,
+                snapshot: Self.snapshot(weeklyUsed: used, resetsAt: boundary),
+                accountDiscriminator: nil,
+                now: Self.start)
+        }
+        #expect(notifier.upcomingResetPosts.isEmpty)
+        store.handleUpcomingResetWarning(
+            provider: .codex,
+            snapshot: Self.snapshot(weeklyUsed: 50, resetsAt: boundary),
+            accountDiscriminator: nil,
+            now: Self.start)
+        #expect(notifier.upcomingResetPosts.count == 1)
+    }
+
+    @Test
+    func `snapshot identities keep PAT reminders separate without an OAuth owner`() {
+        let notifier = NotifierSpy()
+        let defaults = InMemoryUserDefaults()
+        let store = Self.makeStore(notifier: notifier, defaults: defaults)
+        store.settings.upcomingResetNotificationsEnabled = true
+        let boundary = Self.start.addingTimeInterval(23 * 3600)
+        for email in ["first@example.com", "second@example.com", "first@example.com"] {
+            store.handleUpcomingResetWarning(
+                provider: .codex,
+                snapshot: Self.snapshot(weeklyUsed: 30, resetsAt: boundary, email: email),
+                accountDiscriminator: nil,
+                now: Self.start)
+        }
+        #expect(notifier.upcomingResetPosts.count == 2)
+        let receipts = defaults.data(forKey: UsageStore.upcomingResetNotificationStatesDefaultsKey)
+        let text = receipts.flatMap { String(data: $0, encoding: .utf8) } ?? ""
+        #expect(!text.contains("@example.com"))
+    }
+
+    @Test
+    func `unknown identities do not share an upcoming reset receipt`() {
+        let notifier = NotifierSpy()
+        let store = Self.makeStore(notifier: notifier)
+        store.settings.upcomingResetNotificationsEnabled = true
+        store.handleUpcomingResetWarning(
+            provider: .codex,
+            snapshot: Self.snapshot(weeklyUsed: 30, resetsAt: Self.start.addingTimeInterval(1800), email: nil),
+            accountDiscriminator: nil,
+            now: Self.start)
+        #expect(notifier.upcomingResetPosts.isEmpty)
+        #expect(store.settings.userDefaults.data(forKey: UsageStore.upcomingResetNotificationStatesDefaultsKey) == nil)
+    }
+
+    @Test
+    func `monthly quotas do not emit weekly reset warnings`() {
+        let notifier = NotifierSpy()
+        let store = Self.makeStore(notifier: notifier)
+        store.settings.upcomingResetNotificationsEnabled = true
+        store.handleUpcomingResetWarning(
+            provider: .codex,
+            snapshot: Self.snapshot(
+                weeklyUsed: 30,
+                resetsAt: Self.start.addingTimeInterval(1800),
+                windowMinutes: 43200),
+            accountDiscriminator: nil,
+            now: Self.start)
+        #expect(notifier.upcomingResetPosts.isEmpty)
+    }
+
     // MARK: - Copy
 
     @Test
@@ -302,7 +377,6 @@ struct UpcomingResetNotificationTests {
                 event: UpcomingResetWarningEvent(
                     resetsAt: boundary,
                     remainingPercent: 70,
-                    isLastCall: false,
                     accountDisplayName: nil),
                 now: Self.start)
             #expect(early.title == "Codex weekly reset soon")
@@ -313,22 +387,11 @@ struct UpcomingResetNotificationTests {
                 event: UpcomingResetWarningEvent(
                     resetsAt: boundary,
                     remainingPercent: 70,
-                    isLastCall: false,
                     accountDisplayName: "work@example.com"),
                 now: Self.start)
             let expectedWithAccount = "Account work@example.com. 70% of the quota is still unused. "
                 + "It resets in 23h and unused quota is lost."
             #expect(withAccount.body == expectedWithAccount)
-
-            let lastCall = UpcomingResetNotificationLogic.notificationCopy(
-                providerName: "Codex",
-                event: UpcomingResetWarningEvent(
-                    resetsAt: boundary,
-                    remainingPercent: 70,
-                    isLastCall: true,
-                    accountDisplayName: nil),
-                now: Self.start)
-            #expect(lastCall.body == "Last call: 70% of the quota is still unused. It resets in 23h.")
         }
     }
 
@@ -360,7 +423,12 @@ struct UpcomingResetNotificationTests {
         return store
     }
 
-    private static func snapshot(weeklyUsed: Double, resetsAt: Date?) -> UsageSnapshot {
+    private static func snapshot(
+        weeklyUsed: Double,
+        resetsAt: Date?,
+        email: String? = "upcoming-reset@example.com",
+        windowMinutes: Int = 10080) -> UsageSnapshot
+    {
         UsageSnapshot(
             primary: RateWindow(
                 usedPercent: 10,
@@ -369,13 +437,13 @@ struct UpcomingResetNotificationTests {
                 resetDescription: nil),
             secondary: RateWindow(
                 usedPercent: weeklyUsed,
-                windowMinutes: 10080,
+                windowMinutes: windowMinutes,
                 resetsAt: resetsAt,
                 resetDescription: nil),
             updatedAt: self.start,
             identity: ProviderIdentitySnapshot(
                 providerID: .codex,
-                accountEmail: self.accountEmail,
+                accountEmail: email,
                 accountOrganization: nil,
                 loginMethod: "chatgpt"))
     }

@@ -160,6 +160,7 @@
 "Individual credits" = "Crediti individuali";
 "Workspace" = "Spazio di lavoro";
 "Credits history" = "Storico crediti";
+"Cursor app session expired — open Cursor to sign in again, or sign in to cursor.com in your browser." = "La sessione dell’app Cursor è scaduta — apri Cursor per accedere di nuovo oppure accedi a cursor.com nel browser.";
 "Cursor login failed" = "Accesso Cursor non riuscito";
 "Custom" = "Personalizzato";
 "Custom Path" = "Percorso personalizzato";
@@ -555,8 +556,6 @@
 "upcoming_reset_notification_title" = "Reset %2$@ di %1$@ imminente";
 "upcoming_reset_notification_body" = "%1$@ della quota è ancora inutilizzata. Si azzera tra %2$@ e la quota inutilizzata va persa.";
 "upcoming_reset_notification_body_with_account" = "Account %1$@. %2$@ della quota è ancora inutilizzata. Si azzera tra %3$@ e la quota inutilizzata va persa.";
-"upcoming_reset_notification_last_call_body" = "Ultima occasione: %1$@ della quota è ancora inutilizzata. Si azzera tra %2$@.";
-"upcoming_reset_notification_last_call_body_with_account" = "Account %1$@. Ultima occasione: %2$@ della quota è ancora inutilizzata. Si azzera tra %3$@.";
 "quota_warning_warn_at" = "Avvisa a";
 "quota_warning_global_threshold_subtitle" = "Percentuali residue per le finestre di sessione e settimanale, salvo override del provider.";
 "quota_warning_sound" = "Riproduci suono di notifica";
